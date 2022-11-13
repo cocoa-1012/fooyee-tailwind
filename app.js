@@ -4,3 +4,12 @@ var swiper = new Swiper('.mySwiper', {
     prevEl: '.custom-button-prev',
   },
 });
+var swiper2 = new Swiper('#packages', {
+  slidesPerView: 3,
+  spaceBetween: 10,
+  loop: true,
+  navigation: {
+    nextEl: '#packageNext',
+    prevEl: '#packagePrev',
+  },
+});
