@@ -13,3 +13,16 @@ var swiper2 = new Swiper('#packages', {
     prevEl: '#packagePrev',
   },
 });
+
+// header menu toggle
+{
+  const menuIconElm = document.querySelector('#menuIcon');
+  const menuListElm = document.querySelector('#menuList');
+  menuIconElm.addEventListener('click', function () {
+    if (menuListElm.classList.contains('hidden')) {
+      menuListElm.classList.remove('hidden');
+    } else {
+      menuListElm.classList.add('hidden');
+    }
+  });
+}
