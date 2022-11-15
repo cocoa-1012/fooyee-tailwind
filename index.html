@@ -32,12 +32,12 @@
               />
             </div>
 
-            <p class="text-[#313131]">
+            <p class="text-[#313131] hidden xl:block">
               <i class="fa-solid fa-location-dot"></i>
               No. 216 Yanping Road, Zhongli District, Taoyuan City, Taiwan
             </p>
 
-            <p class="text-[#313131]">
+            <p class="text-[#313131] hidden xl:block">
               <i class="fa-solid fa-location-dot"></i>
               +886(3)462-2345
             </p>
@@ -128,17 +128,18 @@
           </div>
         </div>
       </header>
-      <div class="py-10">
+      <div class="md:py-10">
         <div class="container mx-auto">
-          <div class="flex gap-10">
+          <div class="xl:flex gap-10">
             <div
-              class="flex-1 bg-no-repeat bg-right"
+              class="flex-1 bg-no-repeat bg-right home-page-hero-image-wrapper"
               style="
                 background-image: url('./assets/images/Rectangle bed 1.png');
-                background-size: 80% 100%;
               "
             >
-              <div class="w-3/4 p-10">
+              <div
+                class="w-full md:w-3/4 md:p-10 text-center md:text-left py-20"
+              >
                 <h2
                   class="font-italiana capitalize text-transparent leading-tight text-[90px] bg-clip-text bg-gradient-to-r from-[#A3B18A] to-[#1D2C05]"
                 >
@@ -147,13 +148,24 @@
                 </h2>
                 <a
                   href="/"
-                  class="w-60 py-4 text-center bg-[#313131] block mt-4 text-white"
+                  class="w-60 py-4 text-center bg-[#313131] block mt-10 text-white mx-auto md:mx-0"
                   >Book</a
                 >
               </div>
             </div>
-
-            <div class="w-52 text-sm bg-white rounded-lg text-base">
+            <div class="w-6/12 xl:hidden mx-auto py-5 text-center">
+              <p class="text-[#313131] xl:hidden mb-2 leading-loose">
+                <i class="fa-solid fa-location-dot mr-2"></i>
+                +886(3)462-2345
+              </p>
+              <p class="text-[#313131] xl:hidden leading-loose">
+                <i class="fa-solid fa-location-dot mr-2"></i>
+                No. 216 Yanping Road, Zhongli District, Taoyuan City, Taiwan
+              </p>
+            </div>
+            <div
+              class="w-52 hidden md:block text-sm bg-white rounded-lg text-base"
+            >
               <div class="pb-0 text-gray-900">
                 <ul class="space-y-7 capitalize">
                   <li>
@@ -229,19 +241,23 @@
       </div>
       <div class="py-10">
         <div class="container mx-auto">
-          <h2 class="text-5xl text-center font-italiana text-[#313131]">
+          <h2
+            class="text-5xl text-center font-italiana text-[#313131] mb-5 md:mb-0"
+          >
             Rooms
           </h2>
           <div>
             <div class="swiper mySwiper mr-5">
               <div class="swiper-wrapper">
-                <div class="swiper-slide d-flex items-end">
-                  <div class="flex gap-4">
-                    <div class="w-7/12 flex justify-center items-end">
+                <div class="swiper-slide flex items-end">
+                  <div class="md:flex gap-4">
+                    <div
+                      class="md:w-7/12 flex justify-center items-end mb-10 md:mb-0"
+                    >
                       <div
-                        class="flex items-center justify-center h-[500px] 2x:h-auto"
+                        class="md:flex items-center justify-center md:h-[500px] 2x:h-auto"
                       >
-                        <div class="w-8/12 ml-12">
+                        <div class="w-10/12 md:w-8/12 ml-12 mt-10 md:mt-0">
                           <div class="w-12/12">
                             <img
                               src="./assets/images/Rectangle 40.png"
@@ -253,8 +269,8 @@
                         </div>
                       </div>
                     </div>
-                    <div class="w-5/12 flex items-center">
-                      <div class="w-11/12">
+                    <div class="md:w-5/12 md:flex items-center">
+                      <div class="w-10/12 mx-auto md:mx-0">
                         <h2
                           class="text-2xl mb-2 text-[#313131] font-bold capitalize"
                         >
@@ -312,13 +328,15 @@
                   </div>
                   <!-- slider buttons end -->
                 </div>
-                <div class="swiper-slide d-flex items-end">
-                  <div class="flex gap-4">
-                    <div class="w-7/12 flex justify-center items-end">
+                <div class="swiper-slide flex items-end">
+                  <div class="md:flex gap-4">
+                    <div
+                      class="md:w-7/12 flex justify-center items-end mb-10 md:mb-0"
+                    >
                       <div
-                        class="flex items-center justify-center h-[500px] 2x:h-auto"
+                        class="md:flex items-center justify-center md:h-[500px] 2x:h-auto"
                       >
-                        <div class="w-8/12 ml-12">
+                        <div class="w-10/12 md:w-8/12 ml-12 mt-10 md:mt-0">
                           <div class="w-12/12">
                             <img
                               src="./assets/images/Rectangle 40.png"
@@ -330,8 +348,8 @@
                         </div>
                       </div>
                     </div>
-                    <div class="w-5/12 flex items-center">
-                      <div class="w-11/12">
+                    <div class="md:w-5/12 md:flex items-center">
+                      <div class="w-10/12 mx-auto md:mx-0">
                         <h2
                           class="text-2xl mb-2 text-[#313131] font-bold capitalize"
                         >
@@ -404,7 +422,7 @@
             <div class="">
               <div class="py-20">
                 <div class="relative">
-                  <div class="swiper w-10/12" id="packages">
+                  <div class="swiper w-10/12" id=" ">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
                         <div
@@ -534,8 +552,8 @@
             customer reviews
           </h2>
           <div class="w-10/12 mx-auto">
-            <div class="flex gap-12">
-              <div class="w-6/12 gap-4 flex items-start">
+            <div class="md:flex gap-12">
+              <div class="md:w-6/12 gap-4 flex items-start">
                 <div class="w-16 aspect-square">
                   <img
                     src="./assets/images/Vector (1).png"
@@ -575,7 +593,7 @@
                   </div>
                 </div>
               </div>
-              <div class="w-6/12 gap-4 flex items-start">
+              <div class="md:w-6/12 gap-4 hidden md:flex items-start">
                 <div class="w-16 aspect-square">
                   <img
                     src="./assets/images/Vector (1).png"
@@ -626,8 +644,8 @@
           <div class="container mx-auto relative z-[2]">
             <div class="w-10/12 mx-auto">
               <div class="py-20">
-                <div class="flex gap-10">
-                  <div class="w-7/12">
+                <div class="md:flex gap-10">
+                  <div class="md:w-7/12 hidden md:block">
                     <div class="w-full h-[400px] rounded-sm overflow-hidden">
                       <img
                         src="./assets/images/Rectangle mob  23.png"
@@ -636,7 +654,7 @@
                       />
                     </div>
                   </div>
-                  <div class="w-5/12">
+                  <div class="md:w-5/12 my-4 md:my-0">
                     <div class="bg-white rounded shadow py-5 px-10">
                       <h2 class="text-4xl font-italiana text-[#313131] mb-2">
                         Directions
@@ -661,6 +679,15 @@
                       <p>Taxi Fee around NT$250</p>
                     </div>
                   </div>
+                  <div class="md:w-7/12 md:hidden">
+                    <div class="w-full h-[400px] rounded-sm overflow-hidden">
+                      <img
+                        src="./assets/images/Rectangle mob  23.png"
+                        class="w-full h-full object-cover"
+                        alt=""
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -676,12 +703,12 @@
       </div>
 
       <!-- facilities -->
-      <div class="pt-24 pb-10">
-        <div class="container mx-auto">
+      <div class="md:pt-24 pb-10">
+        <div class="w-10/12 md:container mx-auto">
           <h2 class="text-5xl text-center font-italiana text-[#313131] mb-5">
             Facilities
           </h2>
-          <div class="w-9/12 mx-auto">
+          <div class="w-full md:w-9/12 mx-auto">
             <div class="p-4 border-black border">
               At Hub Hotel we look to integrate coworking, co-living and
               co-learning experience with the most up-to-date and convenient
@@ -695,9 +722,9 @@
               for business meetings, team gatherings, company retreats, lectures
               & talks, local cultural tours, and other group activities.
             </div>
-            <div class="my-9">
-              <div class="flex gap-12">
-                <div class="w-6/12 flex justify-end items-end py-20">
+            <div class="md:my-9">
+              <div class="md:flex gap-12">
+                <div class="md:w-6/12 flex justify-end items-end py-7 md:py-20">
                   <div class="w-full 2xl:w-[650px] 2xl:h-[448px]">
                     <div class="w-full">
                       <img
@@ -708,8 +735,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="w-6/12 flex items-center">
-                  <div class="w-full">
+                <div class="md:w-6/12 w-full flex items-center">
+                  <div class="w-full text-center md:text-left">
                     <h2 class="text-2xl mb-2 font-bold">Business Center</h2>
                     <p class="default-font leading-relaxed mb-4 text-base">
                       Our business center is equipped with a printer, scanner,
@@ -722,7 +749,7 @@
 
                     <a
                       href="/"
-                      class="w-48 py-4 text-center bg-[#313131] block mt-4 text-white capitalize"
+                      class="w-full md:w-48 py-4 text-center bg-[#313131] block mt-4 text-white capitalize"
                       >more facilities</a
                     >
                   </div>
@@ -734,12 +761,12 @@
       </div>
       <!-- footer -->
       <footer class="bg-gray-900">
-        <div class="flex gap-8 py-8 px-6 md:grid-cols-4">
-          <div class="w-5/12">
+        <div class="md:flex gap-8 py-8 px-6 md:grid-cols-4">
+          <div class="md:w-5/12 mb-10">
             <h2 class="mb-6 text-xl font-semibold capitalize text-white">
               contact us
             </h2>
-            <div class="flex gap-4 w-full">
+            <div class="sm:flex md:block xl:flex gap-4 w-full">
               <ul class="text-gray-400">
                 <li class="mb-4">
                   <a href="#" class="hover:underline flex gap-2"
@@ -775,7 +802,7 @@
             </div>
           </div>
 
-          <div class="w-3/12">
+          <div class="md:w-3/12 mb-10">
             <h2 class="mb-6 text-xl font-semibold capitalize text-white">
               about us
             </h2>
@@ -788,11 +815,11 @@
               </p>
             </div>
           </div>
-          <div class="w-4/12">
+          <div class="md:w-4/12">
             <h2 class="mb-6 text-xl font-semibold capitalize text-white">
               contact us
             </h2>
-            <div class="flex gap-10 w-full">
+            <div class="sm:flex md:block xl:flex gap-10 w-full">
               <ul class="text-gray-400">
                 <li class="mb-4">
                   <a href="#" class="hover:underline"> Zhongli Branch </a>

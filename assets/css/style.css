@@ -42,3 +42,13 @@ body * {
 .custom-button-prev {
   left: 0;
 }
+
+.home-page-hero-image-wrapper {
+  background-size: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .home-page-hero-image-wrapper {
+    background-size: 80%;
+  }
+}
