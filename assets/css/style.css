@@ -46,6 +46,8 @@ body * {
 .home-page-hero-image-wrapper,
 .package-details-page-hero-image-wrapper,
 .local-eat-page-hero-image-wrapper,
+.blog-list-page-hero-image-wrapper,
+.blob-article-page-hero-image-wrapper,
 .package-list-page-hero-image-wrapper {
   background-size: 100%;
 }
@@ -54,6 +56,8 @@ body * {
   .home-page-hero-image-wrapper,
   .package-details-page-hero-image-wrapper,
   .local-eat-page-hero-image-wrapper,
+  .blog-list-page-hero-image-wrapper,
+  .blob-article-page-hero-image-wrapper,
   .package-list-page-hero-image-wrapper {
     background-size: 80%;
   }
