@@ -43,12 +43,14 @@ body * {
   left: 0;
 }
 
-.home-page-hero-image-wrapper {
+.home-page-hero-image-wrapper,
+.package-list-page-hero-image-wrapper {
   background-size: 100%;
 }
 
 @media screen and (min-width: 768px) {
-  .home-page-hero-image-wrapper {
+  .home-page-hero-image-wrapper,
+  .package-list-page-hero-image-wrapper {
     background-size: 80%;
   }
 }
