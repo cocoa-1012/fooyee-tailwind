@@ -26,6 +26,25 @@
       },
     },
   });
+  const swiper3 = new Swiper('#homePackages', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
+    navigation: {
+      nextEl: '#homePackagesNext',
+      prevEl: '#homePackagesPrev',
+    },
+    breakpoints: {
+      1024: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1280: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+    },
+  });
 }
 // header menu toggle
 {

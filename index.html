@@ -141,7 +141,7 @@
                 class="w-full md:w-3/4 md:p-10 text-center md:text-left py-20"
               >
                 <h2
-                  class="font-italiana capitalize text-transparent leading-tight text-[90px] bg-clip-text bg-gradient-to-r from-[#A3B18A] to-[#1D2C05]"
+                  class="font-italiana capitalize text-transparent leading-tight text-6xl sm:text-7xl xl:text-[90px] bg-clip-text bg-gradient-to-r from-[#A3B18A] to-[#1D2C05]"
                 >
                   enjoy your <br />
                   vacation
@@ -164,7 +164,7 @@
               </p>
             </div>
             <div
-              class="w-52 hidden md:block text-sm bg-white rounded-lg text-base"
+              class="w-52 hidden xl:block text-sm bg-white rounded-lg text-base"
             >
               <div class="pb-0 text-gray-900">
                 <ul class="space-y-7 capitalize">
@@ -250,26 +250,19 @@
             Rooms
           </h2>
           <div>
-            <div class="swiper mySwiper mr-5">
+            <div class="swiper mySwiper my-10">
               <div class="swiper-wrapper">
                 <div class="swiper-slide flex items-end">
-                  <div class="md:flex gap-4">
+                  <div class="md:flex md:items-center gap-10">
                     <div
-                      class="md:w-7/12 flex justify-center items-end mb-10 md:mb-0"
+                      class="w-11/12 mx-auto md:mx-0 md:w-6/12 md:ml-10 mb-4 md:mb-0"
                     >
-                      <div
-                        class="md:flex items-center justify-center md:h-[500px] 2x:h-auto"
-                      >
-                        <div class="w-10/12 md:w-8/12 ml-12 mt-10 md:mt-0">
-                          <div class="w-12/12">
-                            <img
-                              src="./assets/images/Rectangle 40.png"
-                              class="h-ful w-full object-contain"
-                              alt=""
-                              style="box-shadow: -10px -10px 0px 0px #a3b18a"
-                            />
-                          </div>
-                        </div>
+                      <div class="md:h-[400px]">
+                        <img
+                          src="./assets/images/Rectangle 40.png"
+                          class="h-full w-full object-cover"
+                          alt=""
+                        />
                       </div>
                     </div>
                     <div class="md:w-5/12 md:flex items-center">
@@ -313,42 +306,16 @@
                       </div>
                     </div>
                   </div>
-
-                  <!-- slider buttons start -->
-                  <div class="custom-button-next">
-                    <img
-                      src="./assets/images/Vector3.png"
-                      class="w-6 aspect-[1/1]"
-                      alt=""
-                    />
-                  </div>
-                  <div class="custom-button-prev">
-                    <img
-                      src="./assets/images/Vector2.png"
-                      class="w-6 aspect-[1/1]"
-                      alt=""
-                    />
-                  </div>
-                  <!-- slider buttons end -->
                 </div>
                 <div class="swiper-slide flex items-end">
-                  <div class="md:flex gap-4">
-                    <div
-                      class="md:w-7/12 flex justify-center items-end mb-10 md:mb-0"
-                    >
-                      <div
-                        class="md:flex items-center justify-center md:h-[500px] 2x:h-auto"
-                      >
-                        <div class="w-10/12 md:w-8/12 ml-12 mt-10 md:mt-0">
-                          <div class="w-12/12">
-                            <img
-                              src="./assets/images/Rectangle 40.png"
-                              class="h-ful w-full object-contain"
-                              alt=""
-                              style="box-shadow: -10px -10px 0px 0px #a3b18a"
-                            />
-                          </div>
-                        </div>
+                  <div class="md:flex gap-10">
+                    <div class="md:w-6/12 md:ml-10 mb-4 md:mb-0">
+                      <div class="md:h-[400px]">
+                        <img
+                          src="./assets/images/Rectangle 40.png"
+                          class="h-ful w-full object-cover"
+                          alt=""
+                        />
                       </div>
                     </div>
                     <div class="md:w-5/12 md:flex items-center">
@@ -385,32 +352,31 @@
                           </li>
                         </ul>
                         <a
-                          href="/"
+                          href="./room-deails.html"
                           class="w-48 py-4 text-center bg-[#313131] block mt-4 text-white"
                           >More Info</a
                         >
                       </div>
                     </div>
                   </div>
-
-                  <!-- slider buttons start -->
-                  <div class="custom-button-next">
-                    <img
-                      src="./assets/images/Vector3.png"
-                      class="w-6 aspect-[1/1]"
-                      alt=""
-                    />
-                  </div>
-                  <div class="custom-button-prev">
-                    <img
-                      src="./assets/images/Vector2.png"
-                      class="w-6 aspect-[1/1]"
-                      alt=""
-                    />
-                  </div>
-                  <!-- slider buttons end -->
                 </div>
               </div>
+              <!-- slider buttons start -->
+              <div class="custom-button-next">
+                <img
+                  src="./assets/images/Vector3.png"
+                  class="w-6 aspect-[1/1]"
+                  alt=""
+                />
+              </div>
+              <div class="custom-button-prev">
+                <img
+                  src="./assets/images/Vector2.png"
+                  class="w-6 aspect-[1/1]"
+                  alt=""
+                />
+              </div>
+              <!-- slider buttons end -->
             </div>
           </div>
         </div>
@@ -425,7 +391,7 @@
             <div class="">
               <div class="py-20">
                 <div class="relative">
-                  <div class="swiper w-10/12" id=" ">
+                  <div class="swiper w-10/12" id="homePackages">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
                         <div
@@ -525,14 +491,14 @@
                       </div>
                     </div>
                   </div>
-                  <div class="custom-button-next" id="packageNext">
+                  <div class="custom-button-next" id="homePackagesNext">
                     <img
                       src="./assets/images/Vector3.png"
                       class="w-6 aspect-[1/1]"
                       alt=""
                     />
                   </div>
-                  <div class="custom-button-prev" id="packagePrev">
+                  <div class="custom-button-prev" id="homePackagesPrev">
                     <img
                       src="./assets/images/Vector2.png"
                       class="w-6 aspect-[1/1]"
