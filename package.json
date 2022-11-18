@@ -1,0 +1,25 @@
+{
+  "name": "foyesee",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {},
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  },
+  "scripts": {
+    "start": "npx tailwindcss -i ./assets/css/tailwindcss-input.css -o ./assets/css/tailwind.css --watch",
+    "build": "npx tailwindcss -i ./assets/css/tailwindcss-input.css -o ./assets/css/tailwind.css "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cocoa-1012/fooyee-tailwind.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cocoa-1012/fooyee-tailwind/issues"
+  },
+  "homepage": "https://github.com/cocoa-1012/fooyee-tailwind#readme"
+}
