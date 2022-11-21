@@ -47,6 +47,19 @@
   });
 }
 
+// header menu toggle
+{
+  const menuIconElm = document.querySelector('#menuIcon');
+  const menuListElm = document.querySelector('#menuList');
+  menuIconElm?.addEventListener('click', function () {
+    if (menuListElm?.classList.contains('hidden')) {
+      menuListElm?.classList.remove('hidden');
+    } else {
+      menuListElm?.classList.add('hidden');
+    }
+  });
+}
+
 // accordions
 
 const accordionItems = [
@@ -71,7 +84,7 @@ const accordionItems = [
 ];
 
 accordionItems.forEach((item) => {
-  item.triggerEl.addEventListener('click', function (e) {
+  item?.triggerEl?.addEventListener('click', function (e) {
     const hasClass = item.targetEl.classList.contains('hidden');
     const upArrow = item.triggerEl.querySelector('.upArrow');
     const downArrow = item.triggerEl.querySelector('.downArrow');
