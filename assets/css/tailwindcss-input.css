@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.badge {
+  @apply py-2.5 px-4 mb-2 text-base font-medium border block;
+}
+
+.badge-green-1 {
+  @apply bg-secondary-green-100 text-primary-black border-secondary-green-300;
+}
+.badge-green-2 {
+  @apply bg-secondary-green-200 text-white border-secondary-green-300;
+}
+.badge-green-3 {
+  @apply bg-secondary-green-300 text-white border-secondary-green-300;
+}
+
+.badge-yellow-1 {
+  @apply bg-secondary-yellow-100 text-primary-black border-secondary-yellow-300;
+}
+.badge-yellow-2 {
+  @apply bg-secondary-yellow-200 text-white border-secondary-yellow-200;
+}
+.badge-yellow-3 {
+  @apply bg-secondary-yellow-300 text-white border-secondary-yellow-300;
+}
+
+.badge-red-1 {
+  @apply bg-secondary-red-100 text-primary-black border-secondary-red-300;
+}
+.badge-red-2 {
+  @apply bg-secondary-red-200 text-white border-secondary-red-200;
+}
+.badge-red-3 {
+  @apply bg-secondary-red-300 text-white border-secondary-red-300;
+}
+.badge-black-1 {
+  @apply bg-transparent text-primary-black border-primary-black;
+}
+.badge-black-2 {
+  @apply bg-[#8B8B8B] text-white border-primary-black;
+}
+.badge-black-3 {
+  @apply bg-primary-black text-white border-primary-black;
+}

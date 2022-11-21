@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foyesse</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/tailwind.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div>
+      <header class="h-[100px]">
+        <div class="container mx-auto">
+          <div class="flex items-center justify-between">
+            <div class="logo w-52 h-20">
+              <img
+                src="./assets/images/logo.png"
+                class="w-full h-full object-covers"
+                alt=""
+              />
+            </div>
+
+            <p class="text-[#313131] hidden xl:block">
+              <i class="fa-solid fa-location-dot"></i>
+              No. 216 Yanping Road, Zhongli District, Taoyuan City, Taiwan
+            </p>
+
+            <p class="text-[#313131] hidden xl:block">
+              <i class="fa-solid fa-location-dot"></i>
+              +886(3)462-2345
+            </p>
+
+            <div class="menu relative">
+              <p id="menuIcon" class="text-4xl cursor-pointer text-[#313131]">
+                <i class="fa-solid fa-bars"></i>
+              </p>
+
+              <div
+                id="menuList"
+                class="absolute hidden right-0 top-[50px] z-10 grid-cols-2 w-40 text-sm bg-white rounded-lg border border-gray-100 shadow-md dark:border-gray-700 md:grid-cols-3 dark:bg-gray-700"
+              >
+                <div class="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white">
+                  <ul class="space-y-4 capitalize" aria-labelledby="menuList">
+                    <li>
+                      <a
+                        href="./index.html"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        home
+                      </a>
+                    </li>
+
+                    <li>
+                      <a
+                        href="./room-list.html"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        room list
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./facilities.html"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        facilities
+                      </a>
+                    </li>
+
+                    <li>
+                      <a
+                        href="./package-list.html"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        packages list
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./local-eat.html"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        local eat & drink
+                      </a>
+                    </li>
+
+                    <li>
+                      <a
+                        href="./directions.html"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        directions
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        faqs
+                      </a>
+                    </li>
+
+                    <li>
+                      <a
+                        href="./blog-list.html"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        blog list
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- step progress -->
+      <div class="mb-3">
+        <div class="w-9/12 xl:hidden mx-auto py-5 text-center">
+          <p class="text-[#313131] xl:hidden mb-2 leading-loose">
+            <i class="fa-solid fa-location-dot mr-2"></i>
+            +886(3)462-2345
+          </p>
+          <p class="text-[#313131] xl:hidden leading-loose">
+            <i class="fa-solid fa-location-dot mr-2"></i>
+            No. 216 Yanping Road, Zhongli District, Taoyuan City, Taiwan
+          </p>
+        </div>
+        <div class="w-full xl:w-1/2 mx-auto">
+          <div class="max-w-xl mx-auto my-4">
+            <div class="flex pb-3 pl-10 pr-5 items-center">
+              <div class="flex-1">
+                <div
+                  class="w-6 h-6 bg-[#A3B18A] mx-auto rounded-full text-lg text-white flex items-center"
+                >
+                  <span class="text-gray-400 text-center w-full"></span>
+                </div>
+              </div>
+
+              <div
+                class="w-4/12 align-center items-center align-middle content-center flex"
+              >
+                <div
+                  class="w-full bg-[#D9D9D9] items-center align-middle align-center flex-1"
+                >
+                  <div
+                    class="bg-green-500 text-xs leading-none h-1 text-center text-gray-500"
+                    style="width: 0%"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="flex-1">
+                <div
+                  class="w-6 h-6 bg-white border-2 border mx-auto rounded-full text-lg text-white flex items-center"
+                >
+                  <span class="text-gray-400 text-center w-full"></span>
+                </div>
+              </div>
+
+              <div
+                class="w-4/12 align-center items-center align-middle content-center flex"
+              >
+                <div
+                  class="w-full bg-[#D9D9D9] items-center align-middle align-center flex-1"
+                >
+                  <div
+                    class="bg-green-500 text-xs leading-none h-1 text-center text-gray-500"
+                    style="width: 0%"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="flex-1">
+                <div
+                  class="w-6 h-6 bg-white border-2 border mx-auto rounded-full text-lg text-white flex items-center"
+                >
+                  <span class="text-gray-400 text-center w-full"></span>
+                </div>
+              </div>
+
+              <div
+                class="w-4/12 align-center items-center align-middle content-center flex"
+              >
+                <div
+                  class="w-full bg-[#D9D9D9] items-center align-middle align-center flex-1"
+                >
+                  <div
+                    class="bg-green-500 text-xs leading-none h-1 text-center text-gray-500"
+                    style="width: 0%"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="flex-1">
+                <div
+                  class="w-6 h-6 bg-white border-2 border mx-auto rounded-full text-lg text-white flex items-center"
+                >
+                  <span class="text-gray-400 text-center w-full"></span>
+                </div>
+              </div>
+            </div>
+            <div class="flex text-xs text-left justify-between">
+              <div class="">Packages List</div>
+              <div class="">Packages Details &nbsp&nbsp&nbsp&nbsp</div>
+              <div class="mr-12">Book</div>
+              <div class="">Success</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- hero -->
+      <div class="py-10">
+        <div class="w-11/12 xl:container mx-auto">
+          <div class="lg:flex gap-10">
+            <div
+              class="flex-1 bg-no-repeat bg-right package-list-page-hero-image-wrapper"
+              style="background-image: url('./assets/images/Rectangle 1.jpg')"
+            >
+              <div class="w-9/12 xl:p-10 h-60 py-5 ml-10">
+                <h2
+                  class="font-italiana capitalize text-[#313131] leading-tight text-6xl xl:text-[90px]"
+                >
+                  packages <br />
+                  list
+                </h2>
+              </div>
+            </div>
+
+            <div
+              class="lg:w-3/12 text-sm bg-white rounded-lg text-base mt-5 xl:mt-0"
+            >
+              <div class="pb-0 text-gray-900">
+                <div>
+                  <h2 class="text-xl font-bold text-[#313131] mb-2 capitalize">
+                    packages list
+                  </h2>
+                  <p class="text-base leading-loose">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="py-20">
+        <div class="w-11/12 md:container lg:w-10/12 mx-auto">
+          <div class="mb-20">
+            <div class="md:flex md:items-center gap-4 lg:gap-8">
+              <div class="md:w-7/12">
+                <div class="mb-3 md:mb-0 h-full h-60 sm:h-72 md:h-96">
+                  <img
+                    src="./assets/images/Rectangle 33.png"
+                    class="h-full w-full object-cover"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="md:w-5/12 flex items-center">
+                <div class="xl:w-11/12">
+                  <h2 class="text-2xl text-[#313131] mb-2 font-bold">
+                    Room + Free Airport Transfer Early Departure Package
+                  </h2>
+                  <ul class="flex flex-wrap gap-2 justify-between font-bold">
+                    <li class="text-[#a3b18a]">24hrs Available</li>
+                  </ul>
+                  <div class="default-font my-4 text-base">
+                    <p>
+                      Got an early flight to catch? Hotels near Taoyuan Airport
+                      start at $4,000 NT but we have got the best deal for you.
+                    </p>
+                    <ul class="pl-10 mt-2 list-disc">
+                      <li>
+                        Sunday to Thursday nights: $1,980 NT [includes drop-off
+                        at airport
+                      </li>
+                      <li>
+                        Friday night: $2,080 NT [includes drop-off at airport
+                      </li>
+                      <li>
+                        Saturday and holiday nights: $2,280 NT [includes
+                        drop-off at airport
+                      </li>
+                    </ul>
+                    <p class="mt-2">Private car or minivan.</p>
+                  </div>
+
+                  <a
+                    href="./package-deatils.html"
+                    class="w-48 mx-auto xl:mx-0 py-4 text-center bg-[#313131] block mt-4 text-white"
+                    >Detail</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-20">
+            <div class="md:flex md:items-center gap-4 lg:gap-8">
+              <div class="md:w-7/12">
+                <div class="mb-3 md:mb-0 h-full h-60 sm:h-72 md:h-96">
+                  <img
+                    src="./assets/images/Rectangle 33.png"
+                    class="h-full w-full object-cover"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="md:w-5/12 flex items-center">
+                <div class="xl:w-11/12">
+                  <h2 class="text-2xl text-[#313131] mb-2 font-bold">
+                    Room + Free Airport Transfer Early Departure Package
+                  </h2>
+                  <ul class="flex flex-wrap gap-2 justify-between font-bold">
+                    <li class="text-[#a3b18a]">24hrs Available</li>
+                  </ul>
+                  <div class="default-font my-4 text-base">
+                    <p>
+                      Got an early flight to catch? Hotels near Taoyuan Airport
+                      start at $4,000 NT but we have got the best deal for you.
+                    </p>
+                    <ul class="pl-10 mt-2 list-disc">
+                      <li>
+                        Sunday to Thursday nights: $1,980 NT [includes drop-off
+                        at airport
+                      </li>
+                      <li>
+                        Friday night: $2,080 NT [includes drop-off at airport
+                      </li>
+                      <li>
+                        Saturday and holiday nights: $2,280 NT [includes
+                        drop-off at airport
+                      </li>
+                    </ul>
+                    <p class="mt-2">Private car or minivan.</p>
+                  </div>
+
+                  <a
+                    href="./package-deatils.html"
+                    class="w-48 mx-auto xl:mx-0 py-4 text-center bg-[#313131] block mt-4 text-white"
+                    >Detail</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-20">
+            <div class="md:flex md:items-center gap-4 lg:gap-8">
+              <div class="md:w-7/12">
+                <div class="mb-3 md:mb-0 h-full h-60 sm:h-72 md:h-96">
+                  <img
+                    src="./assets/images/Rectangle 33.png"
+                    class="h-full w-full object-cover"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="md:w-5/12 flex items-center">
+                <div class="xl:w-11/12">
+                  <h2 class="text-2xl text-[#313131] mb-2 font-bold">
+                    Room + Free Airport Transfer Early Departure Package
+                  </h2>
+                  <ul class="flex flex-wrap gap-2 justify-between font-bold">
+                    <li class="text-[#a3b18a]">24hrs Available</li>
+                  </ul>
+                  <div class="default-font my-4 text-base">
+                    <p>
+                      Got an early flight to catch? Hotels near Taoyuan Airport
+                      start at $4,000 NT but we have got the best deal for you.
+                    </p>
+                    <ul class="pl-10 mt-2 list-disc">
+                      <li>
+                        Sunday to Thursday nights: $1,980 NT [includes drop-off
+                        at airport
+                      </li>
+                      <li>
+                        Friday night: $2,080 NT [includes drop-off at airport
+                      </li>
+                      <li>
+                        Saturday and holiday nights: $2,280 NT [includes
+                        drop-off at airport
+                      </li>
+                    </ul>
+                    <p class="mt-2">Private car or minivan.</p>
+                  </div>
+
+                  <a
+                    href="./package-deatils.html"
+                    class="w-48 mx-auto xl:mx-0 py-4 text-center bg-[#313131] block mt-4 text-white"
+                    >Detail</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-20">
+            <div class="md:flex md:items-center gap-4 lg:gap-8">
+              <div class="md:w-7/12">
+                <div class="mb-3 md:mb-0 h-full h-60 sm:h-72 md:h-96">
+                  <img
+                    src="./assets/images/Rectangle 33.png"
+                    class="h-full w-full object-cover"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="md:w-5/12 flex items-center">
+                <div class="xl:w-11/12">
+                  <h2 class="text-2xl text-[#313131] mb-2 font-bold">
+                    Room + Free Airport Transfer Early Departure Package
+                  </h2>
+                  <ul class="flex flex-wrap gap-2 justify-between font-bold">
+                    <li class="text-[#a3b18a]">24hrs Available</li>
+                  </ul>
+                  <div class="default-font my-4 text-base">
+                    <p>
+                      Got an early flight to catch? Hotels near Taoyuan Airport
+                      start at $4,000 NT but we have got the best deal for you.
+                    </p>
+                    <ul class="pl-10 mt-2 list-disc">
+                      <li>
+                        Sunday to Thursday nights: $1,980 NT [includes drop-off
+                        at airport
+                      </li>
+                      <li>
+                        Friday night: $2,080 NT [includes drop-off at airport
+                      </li>
+                      <li>
+                        Saturday and holiday nights: $2,280 NT [includes
+                        drop-off at airport
+                      </li>
+                    </ul>
+                    <p class="mt-2">Private car or minivan.</p>
+                  </div>
+
+                  <a
+                    href="./package-deatils.html"
+                    class="w-48 mx-auto xl:mx-0 py-4 text-center bg-[#313131] block mt-4 text-white"
+                    >Detail</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <footer class="bg-gray-900">
+        <div class="md:flex gap-8 py-8 px-6 md:grid-cols-4">
+          <div class="md:w-5/12 mb-10">
+            <h2 class="mb-6 text-xl font-semibold capitalize text-white">
+              contact us
+            </h2>
+            <div class="sm:flex md:block xl:flex gap-4 w-full">
+              <ul class="text-gray-400">
+                <li class="mb-4">
+                  <a href="#" class="hover:underline flex gap-2"
+                    ><i class="fa-regular fa-envelope"></i>
+                    hubhotel.service@gmail.com</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">
+                    <i class="fa-solid fa-phone"></i> +886 (3) 462-2345</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">
+                    <i class="fa-brands fa-whatsapp"></i> +886 (3) 462-2345</a
+                  >
+                </li>
+              </ul>
+              <ul class="text-gray-400">
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">
+                    <i class="fa-solid fa-phone"></i> +886 (3) 462-2345</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline flex gap-2"
+                    ><i class="fa-regular fa-envelope"></i> No. 216 Yanping
+                    Road, Zhongli <br />
+                    District, Taoyuan City, Taiwan</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="md:w-3/12 mb-10">
+            <h2 class="mb-6 text-xl font-semibold capitalize text-white">
+              about us
+            </h2>
+            <div class="text-gray-400">
+              <p>
+                Enjoy a variety of Taiwanese teas, coffees, and cocktails from
+                our café bar while you relax and/or work. We look forward to
+                enriching your business or personal trip with a full range of
+                service.
+              </p>
+            </div>
+          </div>
+          <div class="md:w-4/12">
+            <h2 class="mb-6 text-xl font-semibold capitalize text-white">
+              contact us
+            </h2>
+            <div class="sm:flex md:block xl:flex gap-10 w-full">
+              <ul class="text-gray-400">
+                <li class="mb-4">
+                  <a href="#" class="hover:underline"> Zhongli Branch </a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">Kaohsiung Branch</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">Kaohsiung Branch</a>
+                </li>
+              </ul>
+              <ul class="text-gray-400">
+                <li class="mb-4">
+                  <a href="#" class="hover:underline"> Privacy Policy </a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">Terms & Conditions</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">language switch</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

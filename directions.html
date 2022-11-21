@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foyesse</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/tailwind.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div>
+      <header class="h-[100px]">
+        <div class="container mx-auto">
+          <div class="flex items-center justify-between">
+            <div class="logo w-52 h-20">
+              <img
+                src="./assets/images/logo.png"
+                class="w-full h-full object-covers"
+                alt=""
+              />
+            </div>
+
+            <p class="text-[#313131] hidden xl:block">
+              <i class="fa-solid fa-location-dot"></i>
+              No. 216 Yanping Road, Zhongli District, Taoyuan City, Taiwan
+            </p>
+
+            <p class="text-[#313131] hidden xl:block">
+              <i class="fa-solid fa-location-dot"></i>
+              +886(3)462-2345
+            </p>
+
+            <div class="menu relative">
+              <p id="menuIcon" class="text-4xl cursor-pointer text-[#313131]">
+                <i class="fa-solid fa-bars"></i>
+              </p>
+
+              <div
+                id="menuList"
+                class="absolute hidden right-0 top-[50px] z-10 grid-cols-2 w-40 text-sm bg-white rounded-lg border border-gray-100 shadow-md dark:border-gray-700 md:grid-cols-3 dark:bg-gray-700"
+              >
+                <div class="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white">
+                  <ul class="space-y-4 capitalize" aria-labelledby="menuList">
+                    <li>
+                      <a
+                        href="./index.html"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        home
+                      </a>
+                    </li>
+
+                    <li>
+                      <a
+                        href="./room-list.html"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        room list
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./facilities.html"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        facilities
+                      </a>
+                    </li>
+
+                    <li>
+                      <a
+                        href="./package-list.html"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        packages list
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./local-eat.html"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        local eat & drink
+                      </a>
+                    </li>
+
+                    <li>
+                      <a
+                        href="./directions.html"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        directions
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        faqs
+                      </a>
+                    </li>
+
+                    <li>
+                      <a
+                        href="./blog-list.html"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        blog list
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="w-9/12 xl:hidden mx-auto py-5 text-center">
+        <p class="text-[#313131] xl:hidden mb-2 leading-loose">
+          <i class="fa-solid fa-location-dot mr-2"></i>
+          +886(3)462-2345
+        </p>
+        <p class="text-[#313131] xl:hidden leading-loose">
+          <i class="fa-solid fa-location-dot mr-2"></i>
+          No. 216 Yanping Road, Zhongli District, Taoyuan City, Taiwan
+        </p>
+      </div>
+
+      <!-- hero -->
+      <div>
+        <div class="container">
+          <div class="py-10">
+            <div class="container mx-auto">
+              <div class="xl:flex gap-10">
+                <div
+                  class="flex-1 bg-no-repeat bg-right direction-page-hero-image-wrapper h"
+                  style="
+                    background-image: url('./assets/images/Rectangle\ 85\ \(1\).png');
+                  "
+                >
+                  <div class="xl:w-6/12 px-10 text-center py-24 h-96">
+                    <h2
+                      class="font-italiana capitalize text-[#313131] leading-tight text-center xl:text-left text-[70px]"
+                    >
+                      Directions
+                    </h2>
+                    <a
+                      href="/"
+                      class="w-48 mx-auto mt-10 xl:hidden py-4 text-center bg-[#A3B18A] block mt-4 text-white"
+                      >Detail</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- content -->
+      <div class="pb-20 relative">
+        <div class="w-10/12 xl:w-8/12 2xl:w-9/12 mx-auto z-[2] relative">
+          <div class="md:flex gap-20">
+            <div class="md:w-1/2">
+              <h4 class="text-lg font-semibold mb-1">From Taoyuan Airport</h4>
+              <p
+                class="mb-3 text-base leading-loose mr-2 md:text-sm 2xl:text-base"
+              >
+                Take the ramp into National Highway 2 From Taipei Interchange
+                Exit to National Route 1 Southward In the middle of the 57th
+                exit, you will exit and cross the road. Via 110 A Line Road
+                Yuhua Road 2/Long Highway/Taiwan 1 Turn right Continue to go
+                straight to Yanping Road and arrive at No. 216
+              </p>
+            </div>
+            <div class="md:w-1/2">
+              <h4 class="text-lg font-semibold mb-4">
+                From Taoyuan High Speed Rail Station
+              </h4>
+              <h4 class="text-lg font-semibold mb-1">Taxi</h4>
+              <p>Taxi Fee around NT$250</p>
+            </div>
+          </div>
+        </div>
+        <div class="xl:w-9/12 mx-auto z-[2] relative mt-10 xl:mt-0">
+          <div class="w-full h-96">
+            <img
+              src="./assets/images/Rectangle mob  23.png"
+              class="w-full h-full object-cover"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="absolute left-0 w-72 z-[1] hidden xl:block" style="top: 5%">
+          <img
+            src="./assets/images/Vector (2).png"
+            class="w-full h-full object-fill"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <!-- footer -->
+      <footer class="bg-gray-900">
+        <div class="md:flex gap-8 py-8 px-6 md:grid-cols-4">
+          <div class="md:w-5/12 mb-10">
+            <h2 class="mb-6 text-xl font-semibold capitalize text-white">
+              contact us
+            </h2>
+            <div class="sm:flex md:block xl:flex gap-4 w-full">
+              <ul class="text-gray-400">
+                <li class="mb-4">
+                  <a href="#" class="hover:underline flex gap-2"
+                    ><i class="fa-regular fa-envelope"></i>
+                    hubhotel.service@gmail.com</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">
+                    <i class="fa-solid fa-phone"></i> +886 (3) 462-2345</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">
+                    <i class="fa-brands fa-whatsapp"></i> +886 (3) 462-2345</a
+                  >
+                </li>
+              </ul>
+              <ul class="text-gray-400">
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">
+                    <i class="fa-solid fa-phone"></i> +886 (3) 462-2345</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline flex gap-2"
+                    ><i class="fa-regular fa-envelope"></i> No. 216 Yanping
+                    Road, Zhongli <br />
+                    District, Taoyuan City, Taiwan</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="md:w-3/12 mb-10">
+            <h2 class="mb-6 text-xl font-semibold capitalize text-white">
+              about us
+            </h2>
+            <div class="text-gray-400">
+              <p>
+                Enjoy a variety of Taiwanese teas, coffees, and cocktails from
+                our café bar while you relax and/or work. We look forward to
+                enriching your business or personal trip with a full range of
+                service.
+              </p>
+            </div>
+          </div>
+          <div class="md:w-4/12">
+            <h2 class="mb-6 text-xl font-semibold capitalize text-white">
+              contact us
+            </h2>
+            <div class="sm:flex md:block xl:flex gap-10 w-full">
+              <ul class="text-gray-400">
+                <li class="mb-4">
+                  <a href="#" class="hover:underline"> Zhongli Branch </a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">Kaohsiung Branch</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">Kaohsiung Branch</a>
+                </li>
+              </ul>
+              <ul class="text-gray-400">
+                <li class="mb-4">
+                  <a href="#" class="hover:underline"> Privacy Policy </a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">Terms & Conditions</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">language switch</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -5,9 +5,822 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foyesse</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/tailwind.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
   </head>
   <body>
-    <h2>Hello world</h2>
+    <div>
+      <header class="h-[100px]">
+        <div class="container mx-auto">
+          <div class="flex items-center justify-between">
+            <div class="logo w-52 h-20">
+              <img
+                src="./assets/images/logo.png"
+                class="w-full h-full object-covers"
+                alt=""
+              />
+            </div>
+
+            <p class="text-[#313131] hidden xl:block">
+              <i class="fa-solid fa-location-dot"></i>
+              No. 216 Yanping Road, Zhongli District, Taoyuan City, Taiwan
+            </p>
+
+            <p class="text-[#313131] hidden xl:block">
+              <i class="fa-solid fa-location-dot"></i>
+              +886(3)462-2345
+            </p>
+
+            <div class="menu relative">
+              <p id="menuIcon" class="text-4xl cursor-pointer text-[#313131]">
+                <i class="fa-solid fa-bars"></i>
+              </p>
+
+              <div
+                id="menuList"
+                class="absolute hidden right-0 top-[50px] z-10 grid-cols-2 w-40 text-sm bg-white rounded-lg border border-gray-100 shadow-md dark:border-gray-700 md:grid-cols-3 dark:bg-gray-700"
+              >
+                <div class="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white">
+                  <ul class="space-y-4 capitalize" aria-labelledby="menuList">
+                    <li>
+                      <a
+                        href="./index.html"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        home
+                      </a>
+                    </li>
+
+                    <li>
+                      <a
+                        href="./room-list.html"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        room list
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./facilities.html"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        facilities
+                      </a>
+                    </li>
+
+                    <li>
+                      <a
+                        href="./package-list.html"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        packages list
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./local-eat.html"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        local eat & drink
+                      </a>
+                    </li>
+
+                    <li>
+                      <a
+                        href="./directions.html"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        directions
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        faqs
+                      </a>
+                    </li>
+
+                    <li>
+                      <a
+                        href="./blog-list.html"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        blog list
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="md:py-10">
+        <div class="container mx-auto">
+          <div class="xl:flex gap-10">
+            <div
+              class="flex-1 bg-no-repeat bg-right home-page-hero-image-wrapper"
+              style="
+                background-image: url('./assets/images/Rectangle bed 1.png');
+              "
+            >
+              <div
+                class="w-full md:w-3/4 md:p-10 text-center md:text-left py-20"
+              >
+                <h2
+                  class="font-italiana capitalize text-transparent leading-tight text-6xl sm:text-7xl xl:text-[90px] bg-clip-text bg-gradient-to-r from-[#A3B18A] to-[#1D2C05]"
+                >
+                  enjoy your <br />
+                  vacation
+                </h2>
+                <a
+                  href="/"
+                  class="w-60 py-4 text-center bg-[#313131] block mt-10 text-white mx-auto md:mx-0"
+                  >Book</a
+                >
+              </div>
+            </div>
+            <div class="w-6/12 xl:hidden mx-auto py-5 text-center">
+              <p class="text-[#313131] xl:hidden mb-2 leading-loose">
+                <i class="fa-solid fa-location-dot mr-2"></i>
+                +886(3)462-2345
+              </p>
+              <p class="text-[#313131] xl:hidden leading-loose">
+                <i class="fa-solid fa-location-dot mr-2"></i>
+                No. 216 Yanping Road, Zhongli District, Taoyuan City, Taiwan
+              </p>
+            </div>
+            <div
+              class="w-52 hidden xl:block text-sm bg-white rounded-lg text-base"
+            >
+              <div class="pb-0 text-gray-900">
+                <ul class="space-y-7 capitalize">
+                  <li>
+                    <a
+                      href="./index.html"
+                      class="text-gray-500 hover:text-blue-600"
+                    >
+                      home
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="./room-list.html"
+                      class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                    >
+                      room list
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="./facilities.html"
+                      class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                    >
+                      facilities
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="./package-list.html"
+                      class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                    >
+                      packages list
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="./local-eat.html"
+                      class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                    >
+                      local eat & drink
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="./directions.html"
+                      class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                    >
+                      directions
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                    >
+                      faqs
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="./blog-list.html"
+                      class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                    >
+                      blog list
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="py-10">
+        <div class="container mx-auto">
+          <h2
+            class="text-5xl text-center font-italiana text-[#313131] mb-5 md:mb-0"
+          >
+            Rooms
+          </h2>
+          <div>
+            <div class="swiper mySwiper my-10">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide flex items-end">
+                  <div class="md:flex md:items-center gap-10">
+                    <div
+                      class="w-11/12 mx-auto md:mx-0 md:w-6/12 md:ml-10 mb-4 md:mb-0"
+                    >
+                      <div class="md:h-[400px]">
+                        <img
+                          src="./assets/images/Rectangle 40.png"
+                          class="h-full w-full object-cover"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div class="md:w-5/12 md:flex items-center">
+                      <div class="w-10/12 mx-auto md:mx-0">
+                        <h2
+                          class="text-2xl mb-2 text-[#313131] font-bold capitalize"
+                        >
+                          local food&drink
+                        </h2>
+
+                        <p
+                          class="default-font leading-loose my-4 text-base text-[#313131]"
+                        >
+                          Our hotels are temples of cosiness and design. The
+                          business room is equipped with a 43" LCD TV, wireless
+                          internet, international charging sockets, as well as a
+                          wide selection of Taiwanese tea and Japanese UCC
+                          coffee. It is the perfect place to relax on your
+                          travels.
+                        </p>
+                        <ul class="flex gap-x-6 item-center">
+                          <li class="text-[#A3B18A] text-xl">
+                            <a href="/"><i class="fa-solid fa-carrot"></i></a>
+                          </li>
+                          <li class="text-[#A3B18A] text-xl">
+                            <a href="/"
+                              ><i class="fa-solid fa-mug-saucer"></i
+                            ></a>
+                          </li>
+                          <li class="text-[#A3B18A] text-xl">
+                            <a href="/"
+                              ><i class="fa-solid fa-microphone-lines"></i
+                            ></a>
+                          </li>
+                        </ul>
+                        <a
+                          href="./room-deails.html"
+                          class="w-48 py-4 text-center bg-[#313131] block mt-4 text-white"
+                          >More Info</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide flex items-end">
+                  <div class="md:flex gap-10">
+                    <div class="md:w-6/12 md:ml-10 mb-4 md:mb-0">
+                      <div class="md:h-[400px]">
+                        <img
+                          src="./assets/images/Rectangle 40.png"
+                          class="h-ful w-full object-cover"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div class="md:w-5/12 md:flex items-center">
+                      <div class="w-10/12 mx-auto md:mx-0">
+                        <h2
+                          class="text-2xl mb-2 text-[#313131] font-bold capitalize"
+                        >
+                          local food&drink
+                        </h2>
+
+                        <p
+                          class="default-font leading-loose my-4 text-base text-[#313131]"
+                        >
+                          Our hotels are temples of cosiness and design. The
+                          business room is equipped with a 43" LCD TV, wireless
+                          internet, international charging sockets, as well as a
+                          wide selection of Taiwanese tea and Japanese UCC
+                          coffee. It is the perfect place to relax on your
+                          travels.
+                        </p>
+                        <ul class="flex gap-x-6 item-center">
+                          <li class="text-[#A3B18A] text-xl">
+                            <a href="/"><i class="fa-solid fa-carrot"></i></a>
+                          </li>
+                          <li class="text-[#A3B18A] text-xl">
+                            <a href="/"
+                              ><i class="fa-solid fa-mug-saucer"></i
+                            ></a>
+                          </li>
+                          <li class="text-[#A3B18A] text-xl">
+                            <a href="/"
+                              ><i class="fa-solid fa-microphone-lines"></i
+                            ></a>
+                          </li>
+                        </ul>
+                        <a
+                          href="./room-deails.html"
+                          class="w-48 py-4 text-center bg-[#313131] block mt-4 text-white"
+                          >More Info</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- slider buttons start -->
+              <div class="custom-button-next">
+                <img
+                  src="./assets/images/Vector3.png"
+                  class="w-6 aspect-[1/1]"
+                  alt=""
+                />
+              </div>
+              <div class="custom-button-prev">
+                <img
+                  src="./assets/images/Vector2.png"
+                  class="w-6 aspect-[1/1]"
+                  alt=""
+                />
+              </div>
+              <!-- slider buttons end -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Hostel Package -->
+      <div>
+        <h2 class="text-5xl text-center font-italiana text-[#313131] mb-5">
+          Hostel Packages
+        </h2>
+        <div class="bg-[#A3B18A]">
+          <div class="container mx-auto">
+            <div class="">
+              <div class="py-20">
+                <div class="relative">
+                  <div class="swiper w-10/12" id="homePackages">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div
+                          class="w-[100%] bg-white rounded transition-all duration-300 overflow-hidden"
+                        >
+                          <div class="w-full h-[252px]">
+                            <img
+                              src="./assets/images/Rectangle 16.png"
+                              class="w-full h-full object-cover"
+                              alt=""
+                            />
+                          </div>
+                          <div class="my-4 mx-8">
+                            <h2 class="text-center font-bold">
+                              Room + Free Airport <br />
+                              Transfer Early Departure <br />
+                              Package
+                            </h2>
+
+                            <p class="text-justify leading-loose mt-4 mb-6">
+                              Got an early flight to catch? Hotels near Taoyuan
+                              Airport start at $4,000 NT but we have got the
+                              best deal for you.
+                            </p>
+
+                            <a
+                              href="./package-deatils.html"
+                              class="w-48 mx-auto py-4 text-center bg-[#313131] block mt-4 text-white"
+                              >Book</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div
+                          class="w-[100%] bg-white rounded transition-all duration-300 overflow-hidden"
+                        >
+                          <div class="w-full h-[252px]">
+                            <img
+                              src="./assets/images/Rectangle 18.png"
+                              class="w-full h-full object-cover"
+                              alt=""
+                            />
+                          </div>
+                          <div class="my-4 mx-8">
+                            <h2 class="text-center font-bold">
+                              Taoyuan High Speed ​​Rail <br />
+                              Overnight Package
+                            </h2>
+
+                            <p class="text-justify leading-loose mt-4">
+                              Missed the last train at the high speed rail
+                              station? Book with us after 22:30 and we’ll pay
+                              for your taxi fare from Taoyuan High Speed Rail to
+                              Hub Hotel.
+                            </p>
+
+                            <a
+                              href="/"
+                              class="w-48 mx-auto py-4 text-center bg-[#313131] block mt-4 text-white"
+                              >Book</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div
+                          class="w-[100%] bg-white rounded transition-all duration-300 overflow-hidden"
+                        >
+                          <div class="w-full h-[252px]">
+                            <img
+                              src="./assets/images/Rectangle 10.png"
+                              class="w-full h-full object-cover"
+                              alt=""
+                            />
+                          </div>
+                          <div class="my-4 mx-8">
+                            <h2 class="text-center font-bold">
+                              Room + Free Taoyuan High Speed Rail Transfer Late
+                              Arrival Package
+                            </h2>
+
+                            <p class="text-justify leading-relaxed mt-5">
+                              Arriving late at night and don’t want to travel
+                              downtown with jacked up taxi fares? We offer
+                              airport pick-up the night of your arrival, and
+                              breakfast for two the next morning.
+                            </p>
+
+                            <a
+                              href="/"
+                              class="w-48 mx-auto py-4 text-center bg-[#313131] block mt-4 text-white"
+                              >Book</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="custom-button-next" id="homePackagesNext">
+                    <img
+                      src="./assets/images/Vector3.png"
+                      class="w-6 aspect-[1/1]"
+                      alt=""
+                    />
+                  </div>
+                  <div class="custom-button-prev" id="homePackagesPrev">
+                    <img
+                      src="./assets/images/Vector2.png"
+                      class="w-6 aspect-[1/1]"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- customer reviews -->
+      <div class="pt-10 pb-20">
+        <div class="container mx-auto">
+          <h2
+            class="text-5xl text-center font-italiana text-[#313131] mb-5 capitalize"
+          >
+            customer reviews
+          </h2>
+          <div class="w-10/12 mx-auto">
+            <div class="md:flex gap-12">
+              <div class="md:w-6/12 gap-4 flex items-start">
+                <div class="w-16 aspect-square">
+                  <img
+                    src="./assets/images/Vector (1).png"
+                    alt=""
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <div class="flex-1 pt-5">
+                  <p class="text-sm text-black leading-loose">
+                    Every time I stay at Hub Hotel, I receive top-notch service
+                    that’s truly above and beyond. Special thanks to concierge
+                    Sandra, Christine, Angela, Emma, Elaine and Alice for
+                    restaurant recommendations (and for helping me make dinner
+                    reservations) as well as things to do in the area! I really
+                    enjoy my stays at Hub Hotel and highly recommend this
+                    amazing place to everyone visiting Taiwan.
+                  </p>
+                  <div class="mt-3 flex gap-6 items-center">
+                    <p class="text-[#313131] font-bold">CHUCK7777</p>
+                    <ul class="flex gap-2">
+                      <li class="text-[#A3B18A]">
+                        <i class="fa-solid fa-star"></i>
+                      </li>
+                      <li class="text-[#A3B18A]">
+                        <i class="fa-solid fa-star"></i>
+                      </li>
+                      <li class="text-[#A3B18A]">
+                        <i class="fa-solid fa-star"></i>
+                      </li>
+                      <li class="text-[#A3B18A]">
+                        <i class="fa-solid fa-star"></i>
+                      </li>
+                      <li class="text-[#A3B18A]">
+                        <i class="fa-solid fa-star"></i>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="md:w-6/12 gap-4 hidden md:flex items-start">
+                <div class="w-16 aspect-square">
+                  <img
+                    src="./assets/images/Vector (1).png"
+                    alt=""
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <div class="flex-1 pt-5">
+                  <p class="text-sm text-black leading-loose">
+                    Every time I stay at Hub Hotel, I receive top-notch service
+                    that’s truly above and beyond. Special thanks to concierge
+                    Sandra, Christine, Angela, Emma, Elaine and Alice for
+                    restaurant recommendations (and for helping me make dinner
+                    reservations) as well as things to do in the area! I really
+                    enjoy my stays at Hub Hotel and highly recommend this
+                    amazing place to everyone visiting Taiwan.
+                  </p>
+                  <div class="mt-3 flex gap-6 items-center">
+                    <p class="text-[#313131] font-bold">CHUCK7777</p>
+                    <ul class="flex gap-2">
+                      <li class="text-[#A3B18A]">
+                        <i class="fa-solid fa-star"></i>
+                      </li>
+                      <li class="text-[#A3B18A]">
+                        <i class="fa-solid fa-star"></i>
+                      </li>
+                      <li class="text-[#A3B18A]">
+                        <i class="fa-solid fa-star"></i>
+                      </li>
+                      <li class="text-[#A3B18A]">
+                        <i class="fa-solid fa-star"></i>
+                      </li>
+                      <li class="text-[#A3B18A]">
+                        <i class="fa-solid fa-star"></i>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- direction -->
+      <div class="relative py-20">
+        <div class="bg-[#A3B18A] relative">
+          <div class="container mx-auto relative z-[2]">
+            <div class="w-10/12 mx-auto">
+              <div class="py-20">
+                <div class="md:flex gap-10">
+                  <div class="md:w-7/12 hidden md:block">
+                    <div class="w-full h-[400px] rounded-sm overflow-hidden">
+                      <img
+                        src="./assets/images/Rectangle mob  23.png"
+                        class="w-full h-full object-cover"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="md:w-5/12 my-4 md:my-0">
+                    <div class="bg-white rounded shadow py-5 px-10">
+                      <h2 class="text-4xl font-italiana text-[#313131] mb-2">
+                        Directions
+                      </h2>
+                      <h4 class="text-lg font-semibold mb-1">
+                        From Taoyuan Airport
+                      </h4>
+                      <p
+                        class="mb-3 text-base leading-[170%] mr-2 md:text-sm 2xl:text-base"
+                      >
+                        Take the ramp into National Highway 2 From Taipei
+                        Interchange Exit to National Route 1 Southward In the
+                        middle of the 57th exit, you will exit and cross the
+                        road. Via 110 A Line Road Yuhua Road 2/Long
+                        Highway/Taiwan 1 Turn right Continue to go straight to
+                        Yanping Road and arrive at No. 216
+                      </p>
+                      <h4 class="text-lg font-semibold mb-1">
+                        From Taoyuan High Speed Rail Station
+                      </h4>
+                      <h4 class="text-lg font-semibold mb-1">Taxi</h4>
+                      <p>Taxi Fee around NT$250</p>
+                    </div>
+                  </div>
+                  <div class="md:w-7/12 md:hidden">
+                    <div class="w-full h-[400px] rounded-sm overflow-hidden">
+                      <img
+                        src="./assets/images/Rectangle mob  23.png"
+                        class="w-full h-full object-cover"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="absolute left-0 w-76 z-[1]" style="top: -55px">
+          <img
+            src="./assets/images/Vector.png"
+            class="w-full h-full object-fill"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <!-- facilities -->
+      <div class="md:pt-24 pb-10">
+        <div class="w-10/12 md:container mx-auto">
+          <h2 class="text-5xl text-center font-italiana text-[#313131] mb-5">
+            Facilities
+          </h2>
+          <div class="w-full md:w-9/12 mx-auto">
+            <div class="p-4 border-black border">
+              At Hub Hotel we look to integrate coworking, co-living and
+              co-learning experience with the most up-to-date and convenient
+              service: 24-hour reception, express check-out, buffet style
+              breakfast, business center, reading area, beverage bar and much
+              more. <br />
+              <br />
+
+              We are proficient in English, Chinese, Japanese and Korean. We
+              have high-speed Wifi throughout the hotel, which makes us perfect
+              for business meetings, team gatherings, company retreats, lectures
+              & talks, local cultural tours, and other group activities.
+            </div>
+            <div class="md:my-9">
+              <div class="md:flex gap-12">
+                <div class="md:w-6/12 flex justify-end items-end py-7 md:py-20">
+                  <div class="w-full 2xl:w-[650px] 2xl:h-[448px]">
+                    <div class="w-full">
+                      <img
+                        src="./assets/images/Rectangle 40.png"
+                        class="h-ful w-full object-contain"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="md:w-6/12 w-full flex items-center">
+                  <div class="w-full text-center md:text-left">
+                    <h2 class="text-2xl mb-2 font-bold">Business Center</h2>
+                    <p class="default-font leading-relaxed mb-4 text-base">
+                      Our business center is equipped with a printer, scanner,
+                      fax machine, photocopier, projector, speaker, desktop
+                      computer, high-speed internet and wired internet. Rest
+                      assured you can make your meetings and deadlines remotely
+                      and stress-free. Our front desk can assist with your
+                      business needs 24/7.
+                    </p>
+
+                    <a
+                      href="./facilities.html"
+                      class="w-full md:w-48 py-4 text-center bg-[#313131] block mt-4 text-white capitalize"
+                      >more facilities</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <footer class="bg-gray-900">
+        <div class="md:flex gap-8 py-8 px-6 md:grid-cols-4">
+          <div class="md:w-5/12 mb-10">
+            <h2 class="mb-6 text-xl font-semibold capitalize text-white">
+              contact us
+            </h2>
+            <div class="sm:flex md:block xl:flex gap-4 w-full">
+              <ul class="text-gray-400">
+                <li class="mb-4">
+                  <a href="#" class="hover:underline flex gap-2"
+                    ><i class="fa-regular fa-envelope"></i>
+                    hubhotel.service@gmail.com</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">
+                    <i class="fa-solid fa-phone"></i> +886 (3) 462-2345</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">
+                    <i class="fa-brands fa-whatsapp"></i> +886 (3) 462-2345</a
+                  >
+                </li>
+              </ul>
+              <ul class="text-gray-400">
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">
+                    <i class="fa-solid fa-phone"></i> +886 (3) 462-2345</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline flex gap-2"
+                    ><i class="fa-regular fa-envelope"></i> No. 216 Yanping
+                    Road, Zhongli <br />
+                    District, Taoyuan City, Taiwan</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="md:w-3/12 mb-10">
+            <h2 class="mb-6 text-xl font-semibold capitalize text-white">
+              about us
+            </h2>
+            <div class="text-gray-400">
+              <p>
+                Enjoy a variety of Taiwanese teas, coffees, and cocktails from
+                our café bar while you relax and/or work. We look forward to
+                enriching your business or personal trip with a full range of
+                service.
+              </p>
+            </div>
+          </div>
+          <div class="md:w-4/12">
+            <h2 class="mb-6 text-xl font-semibold capitalize text-white">
+              contact us
+            </h2>
+            <div class="sm:flex md:block xl:flex gap-10 w-full">
+              <ul class="text-gray-400">
+                <li class="mb-4">
+                  <a href="#" class="hover:underline"> Zhongli Branch </a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">Kaohsiung Branch</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">Kaohsiung Branch</a>
+                </li>
+              </ul>
+              <ul class="text-gray-400">
+                <li class="mb-4">
+                  <a href="#" class="hover:underline"> Privacy Policy </a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">Terms & Conditions</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">language switch</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>
